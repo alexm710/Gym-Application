@@ -4,6 +4,11 @@
 This application will develop a weekly gym plan and fitness routine for a user depending on certain factors. For example their weight, height, ability and fitness level will affect how difficult the training program is. Furthermore, if a user completes multiple weeks in succession, the training will incrementally get hard
 
 ## Sprint 1 Review 
+
+#### What went well
+- Created an MVC which is connected to each layer (Model, View, Controller)
+- Designed a WPF with a clear and illustrated layout.
+- Created a databse using entity Framework using a migration.
 After my inital sprint review with Astha, we have established certain aspects that could have been improved within the first Sprint.
 - User stories should be written at a user level, break down the user stories.
 - MVC should have a clearer design.
