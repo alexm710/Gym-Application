@@ -1,3 +1,6 @@
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.AssemblyInfoInputs.cache
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.AssemblyInfo.cs
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.csproj.CoreCompileInputs.cache
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\bin\Debug\netcoreapp3.1\GymModel.exe
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\bin\Debug\netcoreapp3.1\GymController.exe
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\bin\Debug\netcoreapp3.1\GymController.deps.json
@@ -41,9 +44,6 @@ C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\bin\Debug\n
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\bin\Debug\netcoreapp3.1\GymModel.dll
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\bin\Debug\netcoreapp3.1\GymModel.pdb
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.csprojAssemblyReference.cache
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.AssemblyInfoInputs.cache
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.AssemblyInfo.cs
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.csproj.CoreCompileInputs.cache
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.csproj.CopyComplete
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.dll
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymController\obj\Debug\netcoreapp3.1\GymController.pdb

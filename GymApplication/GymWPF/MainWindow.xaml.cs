@@ -24,5 +24,18 @@ namespace GymWPF
         {
             InitializeComponent();
         }
+
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            Register registerWindow = new Register();
+            registerWindow.Show();
+        }
+
+        private void LogIn_Click(object sender, RoutedEventArgs e)
+        {
+            Login loginWindow = new Login();
+            loginWindow.Show();
+        }
     }
 }

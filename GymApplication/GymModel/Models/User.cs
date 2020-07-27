@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
-using Microsoft.EntityFrameworkCore;
 namespace GymModel
 {
     public class User
@@ -21,7 +19,5 @@ namespace GymModel
         public int Height { get; set; }
         public int FitnessLevel { get; set; }
         public DateTime DateStarted { get; set; }
-
-        public List<TrainingProgram> TrainingProgram {get; } = new List<TrainingProgram>();
     }
 }

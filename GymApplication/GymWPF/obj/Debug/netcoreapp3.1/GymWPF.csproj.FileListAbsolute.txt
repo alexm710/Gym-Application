@@ -1,3 +1,10 @@
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\Register.baml
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\Register.g.cs
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF_MarkupCompile.cache
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF_MarkupCompile.lref
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF.csprojAssemblyReference.cache
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\GymModel.exe
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\GymController.exe
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\GymWPF.exe
@@ -39,11 +46,6 @@ C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcorea
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\GymModel.dll
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\GymController.pdb
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\GymModel.pdb
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF.csprojAssemblyReference.cache
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\MainWindow.g.cs
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\App.g.cs
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF_MarkupCompile.cache
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF_MarkupCompile.lref
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\MainWindow.baml
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF.g.resources
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF.AssemblyInfoInputs.cache

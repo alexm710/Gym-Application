@@ -1,0 +1,26 @@
+﻿<Window x:Class="GymWPF.Login"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+        Title="Registration" Height="387" Width="528" Background="Black">
+    <Grid  Height="350" Width="525" Background="LightBlue">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="195,0,0,0" Name="textBlockHeading" Text="Registration:" VerticalAlignment="Top" Width="110"  FontSize="17" FontStretch="ExtraCondensed"/>
+
+
+        <!--end Button as a Link button using style-->
+        <Grid Margin="28,41,32,0" Background="White" Height="286" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="252*" />
+                <!--   <RowDefinition Height="12*" />-->
+            </Grid.RowDefinitions>
+            <TextBlock Height="20" x:Name ="errormessage" HorizontalAlignment="Left" Margin="93,-1,0,0" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="#FFE5572C" Text="" />
+            <TextBlock Height="23" x:Name="textBlockUsername" HorizontalAlignment="Left" Margin="67,80,0,0" Text="Username" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" x:Name="textBlockPassword" HorizontalAlignment="Left" Margin="67,107,0,0" Text="Password:" VerticalAlignment="Top" Width="110"  />
+            <TextBox Height="23" x:Name="textBoxUsername" HorizontalAlignment="Left" Margin="183,80,0,0" VerticalAlignment="Top" Width="222" TextChanged="textBoxUsername_TextChanged" />
+
+            <!--For password-->
+            <PasswordBox Height="23" x:Name="passwordBox" HorizontalAlignment="Left" Margin="183,107,0,0" VerticalAlignment="Top" Width="222" />
+            <Button Content="Submit" x:Name="btnSubmit" Height="23" HorizontalAlignment="Left" Margin="246,238,0,0" VerticalAlignment="Top" Width="70" />
+            <Button Content="Cancel" x:Name="btnCancel" Height="23" HorizontalAlignment="Right" Margin="0,238,60,0" VerticalAlignment="Top" Width="70" />
+        </Grid>
+    </Grid>
+</Window>  

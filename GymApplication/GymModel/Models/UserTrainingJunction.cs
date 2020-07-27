@@ -3,17 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
-
 namespace GymModel
 {
-    public class TrainingProgram
+    public class UserTrainingJunction
     {
-        [Key]
         public int TrainingId { get; set; }
+        public TrainingProgram TrainingProgram { get; set; }
         public int UserId { get; set; }
-        public int TrainingType { get; set; }
-        public string Difficulty { get; set; }
         public User User { get; set; }
     }
 }
-    
