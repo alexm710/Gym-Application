@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymController", "GymController\GymController.csproj", "{00D0E9ED-0806-4A18-B080-6D017245E044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymModel", "GymModel\GymModel.csproj", "{1D428CB8-23A1-4FA2-8DF6-CE9529E050D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymWPF", "GymWPF\GymWPF.csproj", "{B479817F-4262-4B93-B99F-FE098B4A51B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00D0E9ED-0806-4A18-B080-6D017245E044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00D0E9ED-0806-4A18-B080-6D017245E044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00D0E9ED-0806-4A18-B080-6D017245E044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00D0E9ED-0806-4A18-B080-6D017245E044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D428CB8-23A1-4FA2-8DF6-CE9529E050D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D428CB8-23A1-4FA2-8DF6-CE9529E050D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D428CB8-23A1-4FA2-8DF6-CE9529E050D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D428CB8-23A1-4FA2-8DF6-CE9529E050D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B479817F-4262-4B93-B99F-FE098B4A51B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B479817F-4262-4B93-B99F-FE098B4A51B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B479817F-4262-4B93-B99F-FE098B4A51B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B479817F-4262-4B93-B99F-FE098B4A51B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92685D7A-1693-4F4D-90C0-30F7696B1F8E}
+	EndGlobalSection
+EndGlobal
