@@ -5,12 +5,12 @@ This application will develop a weekly gym plan and fitness routine for a user d
 
 ## Sprint Overview  
 
-#### What went well
+### What went well
 - Created an MVC which is connected to each layer (Model, View, Controller)
 - Designed a WPF with a clear and illustrated layout.
 - Created a databse using entity Framework using a migration.
 
-#### Sprint Review
+### Sprint Review
 After my inital sprint review with Astha, we have established certain aspects that could have been improved within the first Sprint.
 - User stories should be written at a user level, break down the user stories.
 - MVC should have a clearer design.
