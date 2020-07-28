@@ -19,24 +19,36 @@ namespace GymWPF
     /// </summary>
     public partial class Login : Window
     {
+        private LoginController _loginController = new LoginController();
         public Login()
         {
             InitializeComponent();
         }
 
-        //private void btnSubmit_Click(object sender, RoutedEventArgs e)
-        //{
-        //    if (TextBoxUsername.Text.Length == 0)
-        //    {
-        //        errormessage.Text = "Enter an email.";
-        //        TextBoxUsername.Focus();
-        //    }
-        //    else if (!Regex.IsMatch(TextBoxUsername.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
-        //    {
-        //        errormessage.Text = "Enter a TextBoxUsername email.";
-        //        TextBoxUsername.Select(0, TextBoxUsername.Text.Length);
-        //        TextBoxUsername.Focus();
-        //    }
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            if (textBoxUsername.Text.Length == 0)
+            {
+                errormessage.Text = "Please enter your username.";
+                textBoxUsername.Focus();
+            }
+            else
+            {
+                string username = textBoxUsername.Text;
+                string password = passwordBox.Password;
+
+                if (_loginController.Login(username, password) == true)
+                    errormessage.Text = "Welcome to Alex's Fitness App";
+            }
+        }
+
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+    }
+}
+
         //    else
         //    {
         //        string email = TextBoxUsername.Text;
@@ -61,5 +73,3 @@ namespace GymWPF
         //            errormessage.Text = "Sorry! Please enter existing emailid/password.";
         //        }
         //        con.Close();
-            }
-        }

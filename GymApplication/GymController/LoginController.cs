@@ -1,6 +1,8 @@
-﻿using System;
+﻿using GymModel;
+using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -29,6 +31,17 @@ namespace GymController
             cs.FlushFinalBlock();
             System.Text.Encoding encoding = System.Text.Encoding.UTF8;
             return encoding.GetString(ms.ToArray());
+        }
+
+        public bool Login(string username, string password)
+        {
+            using var db = new GymContext();
+            {
+                var encryptedPassword = db.Users.Where(u => u.UserName == username).Select(p => p.Password).FirstOrDefault();
+                var decryptedPassword = Decrypt(encryptedPassword);
+                    return true;
+
+            }
         }
     }
 }
