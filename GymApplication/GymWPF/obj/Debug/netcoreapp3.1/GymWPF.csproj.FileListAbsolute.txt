@@ -55,3 +55,5 @@ C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcorea
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF.dll
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF.pdb
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\GymWPF.genruntimeconfig.cache
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\Login.baml
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\Login.g.cs

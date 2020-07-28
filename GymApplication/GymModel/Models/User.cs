@@ -15,9 +15,8 @@ namespace GymModel
         [StringLength(60)]
         public string LastName { get; set; }
         [StringLength(50)]
-        public int Weight { get; set; }
-        public int Height { get; set; }
-        public int FitnessLevel { get; set; }
+        public string Email { get; set; }
+        [StringLength(50)]
         public DateTime DateStarted { get; set; }
     }
 }

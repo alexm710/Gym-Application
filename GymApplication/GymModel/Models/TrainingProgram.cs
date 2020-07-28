@@ -13,7 +13,6 @@ namespace GymModel
         public int UserId { get; set; }
         public int TrainingType { get; set; }
         public string Difficulty { get; set; }
-        public User User { get; set; }
     }
 }
     

@@ -3,19 +3,19 @@
   <Class Name="GymModel.TrainingProgram">
     <Position X="1.25" Y="3" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAEBAAAIAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAIAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\TrainingProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GymModel.User">
     <Position X="11" Y="2.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAACEAABAAAAAAAAAAAAAgAACAAAAACAQEAAAAAAAg=</HashCode>
+      <HashCode>AAAACEAABCAAAAAAAAAAAAgAACAAAAACAQEAAAAAAAg=</HashCode>
       <FileName>Models\User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GymModel.UserTrainingJunction">
-    <Position X="6" Y="2.25" Width="3.25" />
+    <Position X="6" Y="3.25" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAEBAAAAAAAAAAAAAAAAAAgAAAAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>Models\UserTrainingJunction.cs</FileName>

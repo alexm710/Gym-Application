@@ -13,13 +13,13 @@ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                 <!--   <RowDefinition Height="12*" />-->
             </Grid.RowDefinitions>
             <TextBlock Height="20" x:Name ="errormessage" HorizontalAlignment="Left" Margin="93,-1,0,0" VerticalAlignment="Top" Width="247"  OpacityMask="Crimson" Foreground="#FFE5572C" Text="" />
-            <TextBlock Height="23" x:Name="textBlockUsername" HorizontalAlignment="Left" Margin="67,80,0,0" Text="Username" VerticalAlignment="Top" Width="110" />
-            <TextBlock Height="23" x:Name="textBlockPassword" HorizontalAlignment="Left" Margin="67,107,0,0" Text="Password:" VerticalAlignment="Top" Width="110"  />
-            <TextBox Height="23" x:Name="textBoxUsername" HorizontalAlignment="Left" Margin="183,80,0,0" VerticalAlignment="Top" Width="222" TextChanged="textBoxUsername_TextChanged" />
+            <TextBlock Height="23" x:Name="TextBlockUsername" HorizontalAlignment="Left" Margin="67,80,0,0" Text="Username" VerticalAlignment="Top" Width="110" />
+            <TextBlock Height="23" x:Name="TextBlockPassword" HorizontalAlignment="Left" Margin="67,107,0,0" Text="Password:" VerticalAlignment="Top" Width="110"  />
+            <TextBox Height="23" x:Name="TextBoxUsername" HorizontalAlignment="Left" Margin="183,80,0,0" VerticalAlignment="Top" Width="222"/>
 
             <!--For password-->
             <PasswordBox Height="23" x:Name="passwordBox" HorizontalAlignment="Left" Margin="183,107,0,0" VerticalAlignment="Top" Width="222" />
-            <Button Content="Submit" x:Name="btnSubmit" Height="23" HorizontalAlignment="Left" Margin="246,238,0,0" VerticalAlignment="Top" Width="70" />
+            <Button Content="Submit" x:Name="btnSubmit" Height="23" HorizontalAlignment="Left" Margin="246,238,0,0" VerticalAlignment="Top" Width="70"  />
             <Button Content="Cancel" x:Name="btnCancel" Height="23" HorizontalAlignment="Right" Margin="0,238,60,0" VerticalAlignment="Top" Width="70" />
         </Grid>
     </Grid>

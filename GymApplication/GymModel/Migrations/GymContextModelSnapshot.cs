@@ -37,8 +37,6 @@ namespace GymModel.Migrations
 
                     b.HasKey("TrainingId");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("TrainingProgram");
                 });
 
@@ -50,17 +48,16 @@ namespace GymModel.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<DateTime>("DateStarted")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("datetime2")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
 
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(60)")
                         .HasMaxLength(60);
-
-                    b.Property<int>("FitnessLevel")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Height")
-                        .HasColumnType("int");
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(60)")
@@ -73,22 +70,9 @@ namespace GymModel.Migrations
                     b.Property<string>("UserName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Weight")
-                        .HasColumnType("int")
-                        .HasMaxLength(50);
-
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("GymModel.TrainingProgram", b =>
-                {
-                    b.HasOne("GymModel.User", "User")
-                        .WithMany("TrainingProgram")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
