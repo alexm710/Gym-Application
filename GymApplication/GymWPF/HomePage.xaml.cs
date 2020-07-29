@@ -29,9 +29,9 @@ namespace GymWPF
         private void ButtonAddExercise_Click(object sender, RoutedEventArgs e)
         {
             string userInput = txtBoxName.Text;
-            _trainingProgram.CreateTraining(userInput);
-            MyTextBox.Clear();
-            ListBoxBlogs.ItemsSource = _bm.ReadBlog();();
+            _trainingProgram.CreateTraining();
+            txtBoxName.Clear();
+            ListBoxDailyGymPlan.ItemsSource = _trainingProgram.CreateTraining();
         }
 
         private void ButtonDeleteExercise_Click(object sender, RoutedEventArgs e)

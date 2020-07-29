@@ -16,6 +16,7 @@ namespace GymController
         {
             CRUDManager crud = new CRUDManager();
             crud.CreateTraining("HIIT", "intermediate", "4x10 Squats, 2x10 incline press ups, 2x10 decline pressups");
+           
         }
 
         public void CreateTraining(string trainingType, string difficulty, string dailyPlan)

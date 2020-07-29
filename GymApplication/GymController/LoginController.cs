@@ -1,6 +1,7 @@
 ﻿using GymModel;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
@@ -43,20 +44,35 @@ namespace GymController
             {
                 //var login = db.Users.Where(u => u.UserName == username).Select(p => p.Password).FirstOrDefault();
                 User selectedUser = db.Users.Where(u => u.UserName == username).FirstOrDefault();
-                if (selectedUser.Password == password) {
-                    return true;
-                    
+                var details =
+                    (from user in db.Users
+                     where user.UserName == username
+                     select new
+                     {
+                         user.UserId,
+                         user.FirstName,
+                         user.LastName,
+                         user.Email
+                     }).ToList();
+
+                if  (details.FirstOrDefault() != null && selectedUser.Password == password)
+                {
+                    int currentUserId = details.FirstOrDefault().UserId;
+                    string currentFirstName = details.FirstOrDefault().FirstName;
+                    string currentLastName = details.FirstOrDefault().LastName;
+                    string currentEmail = details.FirstOrDefault().Email;
+                    GetCurrentUser(currentUserId, currentFirstName, currentLastName, currentEmail);
                 }
                 return false;
             }
-
         }
-        //public User CurrentUser()
-        //{
-        //    using (var db = new GymContext())
-        //    {
-        //        User u = db.Users.Where(b => b.UserName == currentUser.UserName).FirstOrDefault();
-        //        CurrentUser 
-        //    }
+        public void GetCurrentUser(int currentUserId, string currentFirstName, string currentLastName, string currentEmail)
+        {
+            CurrentUser.Id = currentUserId;
+            CurrentUser.FirstName = currentFirstName;
+            CurrentUser.LastName = currentLastName;
+            CurrentUser.Email = currentEmail;
+           
         }
+    }
 }
