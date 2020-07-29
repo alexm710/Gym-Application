@@ -24,7 +24,7 @@ namespace GymWPF
         {
             InitializeComponent();
         }
-
+        //public void 
 
         private void Register_Click(object sender, RoutedEventArgs e)
         {
@@ -34,8 +34,10 @@ namespace GymWPF
 
         private void LogIn_Click(object sender, RoutedEventArgs e)
         {
-            Login loginWindow = new Login();
+            Login loginWindow = new Login(this);
             loginWindow.Show();
+            //log_in loginWindow = new log_in();
+            //loginWindow.ShowDialog();
         }
     }
 }

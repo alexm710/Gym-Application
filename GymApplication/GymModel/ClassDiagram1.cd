@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="GymModel.TrainingProgram">
-    <Position X="1.25" Y="3" Width="3" />
+    <Position X="1.5" Y="3.5" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAIAAAAAQAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\TrainingProgram.cs</FileName>
+      <HashCode>AAEAAAAIAAAAAQAAAAAIAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsClasses\TrainingProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GymModel.User">
-    <Position X="11" Y="2.5" Width="2.75" />
+    <Position X="11.25" Y="3.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAACEAABCAAAAAAAAAAAAgAACAAAAACAQEAAAAAAAg=</HashCode>
-      <FileName>Models\User.cs</FileName>
+      <HashCode>AAAACEAAACAAAAAAAAAAAAgAAAAAAAACAQAAAAAAAAg=</HashCode>
+      <FileName>ModelsClasses\User.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="GymModel.UserTrainingJunction">
-    <Position X="6" Y="3.25" Width="3.25" />
+    <Position X="6.25" Y="4" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAEBAAAAAAAAAAAAAAAAAAgAAAAAAAAEAAAAAAAAAAA=</HashCode>
-      <FileName>Models\UserTrainingJunction.cs</FileName>
+      <FileName>ModelsClasses\UserTrainingJunction.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="TrainingProgram" />
@@ -26,10 +26,20 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="GymModel.WeeklyProgress">
-    <Position X="6.25" Y="5.5" Width="3.25" />
+    <Position X="8.5" Y="6.75" Width="3.25" />
     <TypeIdentifier>
       <HashCode>AAABAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\WeeklyProgress.cs</FileName>
+      <FileName>ModelsClasses\WeeklyProgress.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="User" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GymModel.CurrentUser">
+    <Position X="11.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAACAAAAAAAQAAACAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>ModelsClasses\CurrentUser.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="User" />

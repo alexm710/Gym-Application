@@ -88,8 +88,8 @@ namespace GymWPF
                 }
                 else
                 {
-                    string encryptedPassword = _registerController.Encrypt(password);
-                    _registerController.RegisterUser(firstname, username, lastname, email, encryptedPassword);
+                    //string encryptedPassword = _registerController.Encrypt(password);
+                    _registerController.RegisterUser(firstname, lastname, username, email, password);
                     errormessage.Text = "You have registered successfully!";
                     Reset();
                 }

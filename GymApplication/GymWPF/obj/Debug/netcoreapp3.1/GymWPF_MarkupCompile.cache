@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\App.xaml
-3-630875497
+5-505582594
 
-5-1639167846
+7-2120211682
 212-1636676583
-Login.xaml;MainWindow.xaml;Register.xaml;
+HomePage.xaml;Login.xaml;log_in.xaml;MainWindow.xaml;Register.xaml;
 
 False
 

@@ -1,0 +1,71 @@
+﻿<Window x:Class="GymWPF.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GymWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="LightBlue">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+        <Label x:Name="LabelHeader" Content="Alex's Fitness App" FontWeight="Bold" FontSize="35"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="2" HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" Background="Black" Foreground="WhiteSmoke"/>
+
+
+        <!--ListBox Daily Gym Plan-->
+        <Label Content="Daily Gym Plan Selection" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,133,5" Grid.Row="2" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3"/>
+        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="ListBoxBlogs" Background="WhiteSmoke" FontSize="20"  Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="2">
+        </ListBox>
+
+        <!--ListBox Weekly Gym Plan-->
+        <Label Content="Weekly Gym Plan" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,0,5" Grid.Row="2" Grid.Column="3" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="262"/>
+        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="ListBoxWeeklyGymPlan" Background="WhiteSmoke" FontSize="20" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2">
+        </ListBox>
+
+
+
+        <!--Button Delete Exercise-->
+        <Button x:Name="ButtonDeleteExercise" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold"  FontSize="18" Content="Delete Exercise"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonDeleteExercise_Click"/>
+
+        <!--Button Add Exercise -->
+        <Button x:Name="ButtonAddExercise" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="18" Content="Add Exercise"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonAddExercise_Click"/>
+
+        <!--TextBox Contents-->
+        <Label x:Name="labelName" Content="Name:" FontFamily="Calibri" FontWeight="Bold" Margin="5" Grid.Row="6" Grid.Column="3" FontSize="20"/>
+        <TextBox x:Name="txtBoxName" Grid.Row="6" Grid.Column="5" Margin="0,5,5,5" FontSize="20"/>
+
+        <Label Content="Content:" FontFamily="Calibri" FontWeight="Bold" Margin="5" Grid.Row="7" Grid.Column="3" FontSize="20"/>
+        <TextBox Grid.Row="7" Grid.Column="5" Name="txtBoxContent" Margin="0,5,5,5" FontSize="20"/>
+
+        <!--Button Clear Entry-->
+        <Button x:Name="ButtonClear" Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Clear "
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonClear_Click"/>
+
+        <!--Button Random Exercise-->
+        <Button x:Name="ButtonRandomExercise" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Random Exercise"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+    </Grid>
+</Window>

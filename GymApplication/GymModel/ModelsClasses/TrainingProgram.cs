@@ -11,8 +11,9 @@ namespace GymModel
         [Key]
         public int TrainingId { get; set; }
         public int UserId { get; set; }
-        public int TrainingType { get; set; }
+        public string TrainingType { get; set; }
         public string Difficulty { get; set; }
+        public string DailyPlan { get; set; }
     }
 }
     

@@ -20,9 +20,11 @@ namespace GymWPF
     public partial class Login : Window
     {
         private LoginController _loginController = new LoginController();
-        public Login()
+        private MainWindow _mainWindow;
+        public Login(MainWindow mw)
         {
             InitializeComponent();
+            _mainWindow = mw;
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
@@ -37,8 +39,13 @@ namespace GymWPF
                 string username = textBoxUsername.Text;
                 string password = passwordBox.Password;
 
-                if (_loginController.Login(username, password) == true)
-                    errormessage.Text = "Welcome to Alex's Fitness App";
+                //_mainWindow.selectedUser =_loginController.Login(username, password); 
+                errormessage.Text = "Welcome to Alex's Fitness App!";
+                Close();
+                HomePage homepage = new HomePage();
+                _mainWindow.Close();
+                homepage.ShowDialog();
+               
             }
         }
 
