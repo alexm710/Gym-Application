@@ -62,6 +62,7 @@ namespace GymController
                     string currentLastName = details.FirstOrDefault().LastName;
                     string currentEmail = details.FirstOrDefault().Email;
                     GetCurrentUser(currentUserId, currentFirstName, currentLastName, currentEmail);
+                    return true;
                 }
                 return false;
             }
@@ -72,7 +73,6 @@ namespace GymController
             CurrentUser.FirstName = currentFirstName;
             CurrentUser.LastName = currentLastName;
             CurrentUser.Email = currentEmail;
-           
         }
     }
 }

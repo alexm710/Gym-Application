@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="GymModel.TrainingProgram">
-    <Position X="1.5" Y="3.5" Width="3" />
+    <Position X="1.75" Y="3.25" Width="3" />
     <TypeIdentifier>
-      <HashCode>AAEAAAAIAAAAAQAAAAAIAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAIAAAAAQAEAAAIAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ModelsClasses\TrainingProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -25,25 +25,12 @@
       <Property Name="User" />
     </ShowAsAssociation>
   </Class>
-  <Class Name="GymModel.WeeklyProgress">
-    <Position X="8.5" Y="6.75" Width="3.25" />
-    <TypeIdentifier>
-      <HashCode>AAABAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>ModelsClasses\WeeklyProgress.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="User" />
-    </ShowAsAssociation>
-  </Class>
   <Class Name="GymModel.CurrentUser">
     <Position X="11.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAACAAAAAAAQAAACAAAAAAAAACAAAAAAAAAAA=</HashCode>
-      <FileName>ModelsClasses\CurrentUser.cs</FileName>
+      <HashCode>AAACAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>CurrrentUser.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="User" />
-    </ShowAsAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

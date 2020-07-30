@@ -12,11 +12,13 @@ namespace GymController
         public User CurrentUser { get; set; }
         public TrainingProgram Training { get; set; }
 
+
         static void Main(string[] args)
         {
             CRUDManager crud = new CRUDManager();
-            crud.CreateTraining("HIIT", "intermediate", "4x10 Squats, 2x10 incline press ups, 2x10 decline pressups");
-           
+            //crud.CreateTraining("HIIT", "intermediate", "4x10 Squats, 2x10 incline press ups, 2x10 decline pressups");
+            //crud.Delete(6);
+            //crud.Update("HIIT", "beginner", "4x10 burpees, 2x10 squats");
         }
 
         public void CreateTraining(string trainingType, string difficulty, string dailyPlan)
@@ -32,40 +34,43 @@ namespace GymController
                 db.SaveChanges();
             }
         }
-        public static List<TrainingProgram> RetrieveTraining()
-        {
-            using var db = new GymContext();
-            return db.TrainingProgram.ToList();
-        }
-        public void Delete()
+
+        public List<TrainingProgram> GetExercise()
         {
             using (var db = new GymContext())
             {
+                var exercises = db.TrainingProgram.ToList();
+                return exercises;
+            }
+        }
+        public void Delete(int trainingId)
+        {
+            using (var db = new GymContext())
+            {
+                Training = db.TrainingProgram.Where(t => t.TrainingId == trainingId).FirstOrDefault();
                 db.Remove(Training);
                 db.SaveChanges();
             }
         }
 
+        public void Update(int trainingId, string trainingType, string difficulty, string dailyPlan)
+        {
+            using (var db = new GymContext())
+            {
+                var training = 
+                //var training = db.TrainingProgram.Where(u => u.UserId == CurrentUser.UserId).FirstOrDefault()
+
+                Training = db.TrainingProgram.Where(t => t.TrainingId == trainingId).FirstOrDefault();
+                Training.TrainingType = trainingType;
+                Training.Difficulty = difficulty;
+                Training.DailyPlan = dailyPlan;
+                db.SaveChanges();
+            }
+        }
         public void SetSelectedTraining(object selectedTraining)
         {
             Training = (TrainingProgram)selectedTraining;
         }
 
-        //public void Update(string trainingType, string difficulty, string dailyPlan)
-        //{
-        //    using (var db = new GymContext())
-        //    {
-        //        var training = db.TrainingProgram.Where(u => u.UserId == CurrentUser.UserId).Include(t => t.TrainingType).FirstOrDefault();
-
-        //        training.TrainingType.Add(
-        //            new TrainingProgram
-        //            {
-        //                TrainingType = trainingType,
-        //                Difficulty = difficulty,
-        //                DailyPlan = dailyPlan
-        //            });
-        //        db.SaveChanges();
-        //    }
-
-        }
+    }
 }

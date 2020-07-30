@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GymModel
 {
-    public static class CurrrentUser
+    public static class CurrentUser
     {
         public static int Id { get; set; }
         public static string FirstName { get; set; }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GymModel
 {
-    public class TrainingProgram
+    public partial class TrainingProgram
     {
         [Key]
         public int TrainingId { get; set; }

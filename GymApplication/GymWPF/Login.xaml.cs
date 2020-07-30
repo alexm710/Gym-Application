@@ -27,7 +27,7 @@ namespace GymWPF
             _mainWindow = mw;
         }
 
-        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        private void BtnSubmit_Click(object sender, RoutedEventArgs e)
         {
             if (textBoxUsername.Text.Length == 0)
             {
@@ -38,8 +38,13 @@ namespace GymWPF
             {
                 string username = textBoxUsername.Text;
                 string password = passwordBox.Password;
+                if (_loginController.Login(username, password) == true)
+                {
+                    //string successMsg =_loginController.GetCurrentUser();
+                    //errormessage.Show(welcomeMessage);
+                }
+                _loginController.Login(username, password);
 
-                //_mainWindow.selectedUser =_loginController.Login(username, password); 
                 errormessage.Text = "Welcome to Alex's Fitness App!";
                 Close();
                 HomePage homepage = new HomePage();
@@ -49,7 +54,7 @@ namespace GymWPF
             }
         }
 
-        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        private void BtnCancel_Click(object sender, RoutedEventArgs e)
         {
             Close();
         }

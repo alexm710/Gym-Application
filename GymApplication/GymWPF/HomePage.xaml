@@ -35,7 +35,7 @@
 
         <!--ListBox Daily Gym Plan-->
         <Label Content="Daily Gym Plan Selection" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,133,5" Grid.Row="2" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3"/>
-        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="ListBoxBlogs" Background="WhiteSmoke" FontSize="20"  Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="2">
+        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="ListBoxDailyGymPlan" Background="WhiteSmoke" FontSize="8"  Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="2">
         </ListBox>
 
         <!--ListBox Weekly Gym Plan-->
@@ -56,6 +56,8 @@
         <!--TextBox Contents-->
         <Label x:Name="labelName" Content="Name:" FontFamily="Calibri" FontWeight="Bold" Margin="5" Grid.Row="6" Grid.Column="3" FontSize="20"/>
         <TextBox x:Name="txtBoxName" Grid.Row="6" Grid.Column="5" Margin="0,5,5,5" FontSize="20"/>
+        
+        <TextBox x:Name="txtBoxUserId" Grid.Row="1" Grid.Column="5" Margin="0,5,5,5" FontSize="20"/>
 
         <Label Content="Content:" FontFamily="Calibri" FontWeight="Bold" Margin="5" Grid.Row="7" Grid.Column="3" FontSize="20"/>
         <TextBox Grid.Row="7" Grid.Column="5" Name="txtBoxContent" Margin="0,5,5,5" FontSize="20"/>
@@ -64,8 +66,8 @@
         <Button x:Name="ButtonClear" Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Clear "
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonClear_Click"/>
 
-        <!--Button Random Exercise-->
-        <Button x:Name="ButtonRandomExercise" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Random Exercise"
-               VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <!--Button Update Exercise-->
+        <Button x:Name="ButtonUpdateExercise" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Update Exercise"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonUpdateExercise_Click"/>
     </Grid>
 </Window>

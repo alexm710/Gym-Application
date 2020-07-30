@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="AddExercise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="HomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -16,8 +19,14 @@
     <Compile Update="Register.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UpdateExercise.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddExercise.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="HomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -28,6 +37,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Register.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateExercise.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
