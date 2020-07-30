@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using GymModel;
 
 namespace GymWPF
 {
@@ -26,10 +27,11 @@ namespace GymWPF
 
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
+
             string difficulty = DifficultyBox.Text;
             string training = TrainingBox.Text;
             string routine = RoutineBox.Text;
-            _crudManager.Update(_crudManager.Training.TrainingId, training, routine, difficulty);
+            _crudManager.Update (training, routine, difficulty);
             MessageBox.Show("Your exercise has been updated succesfully.");
             this.Close();
         }

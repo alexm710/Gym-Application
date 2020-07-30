@@ -53,18 +53,22 @@ namespace GymController
             }
         }
 
-        public void Update(int trainingId, string trainingType, string difficulty, string dailyPlan)
+        public void Update(string trainingType, string difficulty, string dailyPlan)
         {
             using (var db = new GymContext())
             {
-                var training = 
+                var training = db.TrainingProgram.Where(t => t.TrainingId == CurrentUser.UserId).FirstOrDefault();
+
+                training.TrainingType = trainingType;
+                training.Difficulty = difficulty;
+                training.DailyPlan = dailyPlan;
+                db.SaveChanges();
                 //var training = db.TrainingProgram.Where(u => u.UserId == CurrentUser.UserId).FirstOrDefault()
 
-                Training = db.TrainingProgram.Where(t => t.TrainingId == trainingId).FirstOrDefault();
-                Training.TrainingType = trainingType;
-                Training.Difficulty = difficulty;
-                Training.DailyPlan = dailyPlan;
-                db.SaveChanges();
+                //Training = db.TrainingProgram.Where(t => t.TrainingId == trainingId).FirstOrDefault();
+                //Training.TrainingType = trainingType;
+                //Training.Difficulty = difficulty;
+                //Training.DailyPlan = dailyPlan;
             }
         }
         public void SetSelectedTraining(object selectedTraining)

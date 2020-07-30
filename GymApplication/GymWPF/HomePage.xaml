@@ -40,7 +40,7 @@
 
         <!--ListBox Weekly Gym Plan-->
         <Label Content="Weekly Gym Plan" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,0,5" Grid.Row="2" Grid.Column="3" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="262"/>
-        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="ListBoxWeeklyGymPlan" Background="WhiteSmoke" FontSize="20" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2">
+        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="ListBoxWeeklyGymPlan" Background="WhiteSmoke" FontSize="20" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" SelectionChanged="ListBoxWeeklyGymPlan_SelectionChanged">
         </ListBox>
 
 
@@ -56,8 +56,6 @@
         <!--TextBox Contents-->
         <Label x:Name="labelName" Content="Name:" FontFamily="Calibri" FontWeight="Bold" Margin="5" Grid.Row="6" Grid.Column="3" FontSize="20"/>
         <TextBox x:Name="txtBoxName" Grid.Row="6" Grid.Column="5" Margin="0,5,5,5" FontSize="20"/>
-        
-        <TextBox x:Name="txtBoxUserId" Grid.Row="1" Grid.Column="5" Margin="0,5,5,5" FontSize="20"/>
 
         <Label Content="Content:" FontFamily="Calibri" FontWeight="Bold" Margin="5" Grid.Row="7" Grid.Column="3" FontSize="20"/>
         <TextBox Grid.Row="7" Grid.Column="5" Name="txtBoxContent" Margin="0,5,5,5" FontSize="20"/>
@@ -65,9 +63,31 @@
         <!--Button Clear Entry-->
         <Button x:Name="ButtonClear" Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Clear "
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonClear_Click"/>
+        <Grid Grid.ColumnSpan="2" Grid.Column="2" Margin="86,24,47,24" Grid.RowSpan="2" Grid.Row="3">
+            <Path Name="starPath" Fill="White" StrokeThickness="1" Stroke="White" 
+          Data="M 127,37 L 104,105 L 34,105 L 91,150 L 69,218 L 127,176 L 187,218 L 164,150 L 223,105 L 151,105 L 127,37">
+            </Path>
+        </Grid>
 
+        <Image Width="300">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="200"  UriSource="Flower.jpg" />
+            </Image.Source>
+        </Image>
+        
+        
         <!--Button Update Exercise-->
         <Button x:Name="ButtonUpdateExercise" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Update Exercise"
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonUpdateExercise_Click"/>
+        <Label x:Name="LabelUserName" Content="Label" Grid.Column="5" HorizontalAlignment="Left" Margin="8,12,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="34" Width="119" Foreground="White">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.199"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Grid>
 </Window>

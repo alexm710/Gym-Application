@@ -13,7 +13,7 @@ namespace GymModel
         public int UserId { get; set; }
         public string TrainingType { get; set; }
         public string Difficulty { get; set; }
-        public string DailyPlan { get; set; }
+        public string DailyPlan { get; set; } 
     }
 }
     

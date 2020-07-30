@@ -63,3 +63,6 @@ C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcorea
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\AddExercise.baml
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\UpdateExercise.g.cs
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\obj\Debug\netcoreapp3.1\UpdateExercise.baml
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\Images\gym.jpg
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\Images\weights.jpg
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\bin\Debug\netcoreapp3.1\Images\boxing.jfif

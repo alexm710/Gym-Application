@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="GymModel.TrainingProgram">
-    <Position X="1.75" Y="3.25" Width="3" />
+    <Position X="2" Y="3.5" Width="3" />
     <TypeIdentifier>
       <HashCode>AAEAAAAIAAAAAQAEAAAIAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ModelsClasses\TrainingProgram.cs</FileName>
@@ -10,7 +10,7 @@
   <Class Name="GymModel.User">
     <Position X="11.25" Y="3.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAACEAAACAAAAAAAAAAAAgAAAAAAAACAQAAAAAAAAg=</HashCode>
+      <HashCode>AAAACEAAACAAAAAAAAAAAAgAAAAAAAAGAQAAAAAAAAg=</HashCode>
       <FileName>ModelsClasses\User.cs</FileName>
     </TypeIdentifier>
   </Class>

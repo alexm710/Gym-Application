@@ -19,12 +19,19 @@ namespace GymWPF
     /// </summary>
     public partial class HomePage : Window
     {
+        private UpdateExercise _updateExercise = new UpdateExercise();
         private CRUDManager _trainingProgram = new CRUDManager();
         public HomePage()
         {
             InitializeComponent();
             PopulateName();
             PopulateExercises();
+
+            int count = ListBoxDailyGymPlan.SelectedItems.Count;
+            if (count < 3)
+            {
+               
+            }
         }
 
         private void ButtonAddExercise_Click(object sender, RoutedEventArgs e)
@@ -32,10 +39,13 @@ namespace GymWPF
             AddExercise addExercise = new AddExercise();
             addExercise.ShowDialog();
             PopulateExercises();
-            //_trainingProgram.CreateTraining();
-            //txtBoxName.Clear();
-            //  ListBoxDailyGymPlan.ItemsSource = _trainingProgram.CreateTraining();
+            int count = ListBoxDailyGymPlan.SelectedItems.Count;
+            if (count < 4)
+            {
+                txtBoxContent.Text = "hello";              
+            }
         }
+
 
         private void PopulateName()
         {
@@ -69,13 +79,19 @@ namespace GymWPF
         {
             if (ListBoxDailyGymPlan.SelectedItem != null)
             {
-                UpdateExercise updateExercise = new UpdateExercise();
+
                 TrainingProgram trainingProgram = ListBoxDailyGymPlan.SelectedItem as TrainingProgram;
-                updateExercise.ShowDialog();
+                _updateExercise.ShowDialog();
                 //_trainingProgram.Update(trainingProgram.TrainingId, trainingProgram.TrainingType, trainingProgram.Difficulty, trainingProgram.DailyPlan);
                 PopulateName();
 
             }
+        }
+
+        private void ListBoxWeeklyGymPlan_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+
         }
     }
 }
