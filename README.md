@@ -46,3 +46,9 @@ After my inital sprint review with Astha, we have established certain aspects th
 - Completed encryption functionality for the user's password when they log-in
 - Halfway through designing the main home-page for the application.
 
+## Sprint 2 Retrospective
+
+- Upon reviewing my second sprint I have realised I must time-box more, as focusing on non-essential aspects of the application is taking up too much time and I must focus on developing an MVP due to the short time-span of the project.
+
+
+
