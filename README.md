@@ -3,11 +3,11 @@
 ## Project Overview 
 This application will develop a weekly gym plan and fitness routine for a user depending on certain factors. For example their weight, height, ability and fitness level will affect how difficult the training program is. Furthermore, if a user completes multiple weeks in succession, the training will incrementally get more difficult.
 
-## Sprint Overview  
+## Sprint 1 Overview  
 
 ### What went well
 - Created an MVC which is connected to each layer (Model, View, Controller)
-- Designed a WPF with a clear and illustrated layout.
+- Designed a WPF register page with a clear and illustrated layout.
 - Created a databse using entity Framework using a migration.
 
 ### Sprint Review
@@ -25,3 +25,24 @@ After my inital sprint review with Astha, we have established certain aspects th
 - Cleaning up the design of my MVC has also made it much easier to manage my files and locate specific components easier. This Sprint Review will help me with my file managemeent and class management in the future.
 
 - Finally, I have added a junction table to my ERD diagram in order to represent a many-to-many relationship between my Users and Training Program class.
+
+## Sprint 2 Overview  
+
+### What went well
+- Completed a WPF log-in page with a clear and illustrated layout 
+- Completed encryption functionality for the user's password when they log-in
+- Halfway through designing the main home-page for the application.
+
+### Sprint Review
+After my inital sprint review with Astha, we have established certain aspects that could have been improved within the first Sprint.
+- Encrypting and decrypting the user's password should be considered bonus functionality and is taking up too much time.
+- Commit more to Github.
+
+## Sprint 2 Retrospective
+- After my first sprint, I thought I had a clearer idea of what to do as I broke down my user stories into more specific stories. However, I need to make sure to focus my user stories for a MVP instead of bonus functionality for my application. 
+
+### What went well
+- Completed a WPF log-in page with a clear and illustrated layout 
+- Completed encryption functionality for the user's password when they log-in
+- Halfway through designing the main home-page for the application.
+
