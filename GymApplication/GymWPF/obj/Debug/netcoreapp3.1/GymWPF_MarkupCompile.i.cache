@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\App.xaml
-11151548125
+6-785063922
 
-5-1722238874
+101398927273
 212-1636676583
-MainWindow.xaml;
+AddExercise.xaml;HomePage.xaml;Login.xaml;MainWindow.xaml;Register.xaml;UpdateExercise.xaml;
 
-False
+True
 

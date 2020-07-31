@@ -1,9 +1,8 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace GymModel.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class InitalCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,13 +13,10 @@ namespace GymModel.Migrations
                     UserId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserName = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(maxLength: 60, nullable: true),
-                    FirstName = table.Column<string>(maxLength: 60, nullable: true),
-                    LastName = table.Column<string>(maxLength: 60, nullable: true),
-                    Weight = table.Column<int>(maxLength: 50, nullable: false),
-                    Height = table.Column<int>(nullable: false),
-                    FitnessLevel = table.Column<int>(nullable: false),
-                    DateStarted = table.Column<DateTime>(nullable: false)
+                    Password = table.Column<string>(nullable: true),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true),
+                    Email = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -34,9 +30,9 @@ namespace GymModel.Migrations
                     TrainingId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserId = table.Column<int>(nullable: false),
-                    TrainingType = table.Column<int>(nullable: false),
+                    TrainingType = table.Column<string>(nullable: true),
                     Difficulty = table.Column<string>(nullable: true),
-                    TrainingPlan = table.Column<string>(nullable: true)
+                    DailyPlan = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

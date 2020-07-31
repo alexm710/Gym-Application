@@ -5,8 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GymWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" Background="LightBlue" >
+    <Grid> 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--Header-->
+        <Label x:Name="LabelHeader" Content="Alex's Fitness App" FontWeight="Bold" FontSize="35"
+               Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="2" HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center" Background="Black" Foreground="WhiteSmoke"/>
+
+        <Button x:Name="LogIn" Content="Log in" Grid.Column="2" Grid.Row="3" Grid.RowSpan="2" Grid.ColumnSpan="2" Click="LogIn_Click"/>
+        <Button x:Name="Register" Content="Register" Grid.Column="2" Grid.Row="6" Grid.RowSpan="2" Grid.ColumnSpan="2" Click="Register_Click" />
+
+        <Image Source="C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\Images\boxing.jfif" Grid.RowSpan="4" Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="3" Margin="72,2,-72,46" />
+        <Image Source="C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\Images\weights.jpg" Grid.RowSpan="4" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="-73,2,73,46" />
 
     </Grid>
 </Window>

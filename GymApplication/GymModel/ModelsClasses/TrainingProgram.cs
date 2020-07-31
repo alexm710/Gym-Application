@@ -6,15 +6,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GymModel
 {
-    public class TrainingProgram
+    public partial class TrainingProgram
     {
         [Key]
         public int TrainingId { get; set; }
         public int UserId { get; set; }
-        public int TrainingType { get; set; }
+        public string TrainingType { get; set; }
         public string Difficulty { get; set; }
-        public string TrainingPlan { get; set; }    
-        public User User { get; set; }
+        public string DailyPlan { get; set; } 
+        public User user { get; set; }
     }
 }
     

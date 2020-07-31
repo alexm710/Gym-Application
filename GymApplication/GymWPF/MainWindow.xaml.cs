@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GymController;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,30 @@ namespace GymWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private CRUDManager _crudManager = new CRUDManager();
         public MainWindow()
         {
             InitializeComponent();
         }
+        //public void 
+
+        private void Register_Click(object sender, RoutedEventArgs e)
+        {
+            Register registerWindow = new Register();
+            registerWindow.Show();
+        }
+
+        private void LogIn_Click(object sender, RoutedEventArgs e)
+        {
+            Login loginWindow = new Login(this);
+            loginWindow.Show();
+            //log_in loginWindow = new log_in();
+            //loginWindow.ShowDialog();
+        }
+
+       //public void CreateTraining(int userId, string training, string difficulity, string plan)
+       // {
+       //     _crudManager.CreateTraining(userId, training, plan, difficulity);
+       // }
     }
 }
