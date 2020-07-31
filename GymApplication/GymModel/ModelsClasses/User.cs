@@ -12,7 +12,6 @@ namespace GymModel
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
-        public DateTime DateStarted { get; set; }
-        public TrainingProgram TrainingProgram { get; set; }
+        public List<TrainingProgram> TrainingPrograms { get; set; }
     }
 }

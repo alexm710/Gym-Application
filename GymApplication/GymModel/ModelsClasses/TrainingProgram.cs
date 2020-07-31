@@ -14,6 +14,7 @@ namespace GymModel
         public string TrainingType { get; set; }
         public string Difficulty { get; set; }
         public string DailyPlan { get; set; } 
+        public User user { get; set; }
     }
 }
     

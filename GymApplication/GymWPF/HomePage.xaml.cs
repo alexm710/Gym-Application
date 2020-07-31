@@ -23,33 +23,56 @@ namespace GymWPF
         private CRUDManager _trainingProgram = new CRUDManager();
         public HomePage()
         {
+            //LabelUserName.PopulateName();
             InitializeComponent();
-            PopulateName();
             PopulateExercises();
-
-            int count = ListBoxDailyGymPlan.SelectedItems.Count;
-            if (count < 3)
-            {
-               
-            }
+            PopulateName();
+            PopulateUpdateExercise();
         }
 
         private void ButtonAddExercise_Click(object sender, RoutedEventArgs e)
         {
+
             AddExercise addExercise = new AddExercise();
-            addExercise.ShowDialog();
+            addExercise.Show();
             PopulateExercises();
-            int count = ListBoxDailyGymPlan.SelectedItems.Count;
-            if (count < 4)
+
+            int count = ListBoxDailyGymPlan.Items.Count;
+            if (count >= 1)
             {
-                txtBoxContent.Text = "hello";              
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "Good start!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+            if (count >= 2)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "Keep going!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+            if (count >= 3)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "You're nearly there!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+            if (count >= 4)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "Congratulations on completing your weekly target!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+            if (count >= 5)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "Now you're just showing off.";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
             }
         }
 
-
         private void PopulateName()
         {
-            txtBoxName.Text = CurrentUser.FirstName;
+            LabelUserName.Content = "Welcome " + CurrentUser.FirstName + "!";
 
         }
 
@@ -71,8 +94,7 @@ namespace GymWPF
         private void ButtonClear_Click(object sender, RoutedEventArgs e)
         {
             string userInput = txtBoxName.Text;
-            txtBoxName.Text = CurrentUser.FirstName;
-            PopulateName();
+
         }
 
         private void ButtonUpdateExercise_Click(object sender, RoutedEventArgs e)
@@ -82,15 +104,29 @@ namespace GymWPF
 
                 TrainingProgram trainingProgram = ListBoxDailyGymPlan.SelectedItem as TrainingProgram;
                 _updateExercise.ShowDialog();
+                PopulateUpdateExercise();
                 //_trainingProgram.Update(trainingProgram.TrainingId, trainingProgram.TrainingType, trainingProgram.Difficulty, trainingProgram.DailyPlan);
-                PopulateName();
+
 
             }
+        }
+        //public void ListBoxItem_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    if (ListBoxDailyGymPlan.SelectedItem != null)
+        //    {
+        //        _trainingProgram.SetSelectedItem(ListBoxDailyGymPlan.SelectedItem);
+        //        PopulateUpdateExercise();
+        //    }
+        //}
+
+
+        private void PopulateUpdateExercise()
+        {
+            ListBoxDailyGymPlan.ItemsSource = _trainingProgram.GetExercise();
         }
 
         private void ListBoxWeeklyGymPlan_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
 
         }
     }

@@ -1,7 +1,6 @@
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.AssemblyInfoInputs.cache
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.AssemblyInfo.cs
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.csproj.CoreCompileInputs.cache
-C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.csprojAssemblyReference.cache
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\bin\Debug\netcoreapp3.1\GymModel.exe
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\bin\Debug\netcoreapp3.1\GymModel.deps.json
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\bin\Debug\netcoreapp3.1\GymModel.runtimeconfig.json
@@ -46,3 +45,4 @@ C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcor
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.dll
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.pdb
 C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.genruntimeconfig.cache
+C:\Users\Suzanne\github\Gym-Application\GymApplication\GymModel\obj\Debug\netcoreapp3.1\GymModel.csprojAssemblyReference.cache

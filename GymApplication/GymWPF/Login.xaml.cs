@@ -40,17 +40,14 @@ namespace GymWPF
                 string password = passwordBox.Password;
                 if (_loginController.Login(username, password) == true)
                 {
-                    //string successMsg =_loginController.GetCurrentUser();
-                    //errormessage.Show(welcomeMessage);
+                    _loginController.Login(username, password);
+                    Close();
+                    HomePage homepage = new HomePage();
+                    _mainWindow.Close();
+                    homepage.Show();
                 }
-                _loginController.Login(username, password);
-
-                errormessage.Text = "Welcome to Alex's Fitness App!";
-                Close();
-                HomePage homepage = new HomePage();
-                _mainWindow.Close();
-                homepage.ShowDialog();
-               
+                else  
+                errormessage.Text = "Please enter a valid username and password.";               
             }
         }
 

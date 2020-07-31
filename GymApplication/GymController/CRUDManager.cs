@@ -9,7 +9,6 @@ namespace GymController
 {
     public class CRUDManager
     {
-        public User CurrentUser { get; set; }
         public TrainingProgram Training { get; set; }
 
 
@@ -21,12 +20,13 @@ namespace GymController
             //crud.Update("HIIT", "beginner", "4x10 burpees, 2x10 squats");
         }
 
-        public void CreateTraining(string trainingType, string difficulty, string dailyPlan)
+        public void CreateTraining(int userId, string trainingType, string difficulty, string dailyPlan)
         {
             using (var db = new GymContext())
             {
                 db.Add(new TrainingProgram
                 {
+                    UserId = userId,
                     TrainingType = trainingType,
                     Difficulty = difficulty,
                     DailyPlan = dailyPlan
@@ -39,7 +39,8 @@ namespace GymController
         {
             using (var db = new GymContext())
             {
-                var exercises = db.TrainingProgram.ToList();
+                var exercises = db.TrainingProgram.Where(t => t.UserId == CurrentUser.Id).ToList();
+                //var exercises = db.TrainingProgram.ToList();
                 return exercises;
             }
         }
@@ -57,7 +58,8 @@ namespace GymController
         {
             using (var db = new GymContext())
             {
-                var training = db.TrainingProgram.Where(t => t.TrainingId == CurrentUser.UserId).FirstOrDefault();
+                CRUDManager crudManager = new CRUDManager();
+                var training = db.TrainingProgram.Where(t => t.UserId == CurrentUser.Id).FirstOrDefault();
 
                 training.TrainingType = trainingType;
                 training.Difficulty = difficulty;

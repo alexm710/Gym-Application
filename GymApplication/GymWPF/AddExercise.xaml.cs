@@ -1,4 +1,5 @@
 ﻿using GymController;
+using GymModel;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,6 +20,7 @@ namespace GymWPF
     public partial class AddExercise : Window
     {
         private CRUDManager _crudManager = new CRUDManager();
+        private HomePage _homePage = new HomePage();
         public AddExercise()
         {
             InitializeComponent();
@@ -29,9 +31,15 @@ namespace GymWPF
             string difficulty = DifficultyBox.Text;
             string training = TrainingBox.Text;
             string routine = RoutineBox.Text;
-            _crudManager.CreateTraining(training, routine, difficulty);
+            _crudManager.CreateTraining(CurrentUser.Id, training, routine, difficulty);
             MessageBox.Show("Your exercise has been added succesfully.");
+            //PopulateExercises();
             this.Close();
+            //FrameMain.Navigate(new HomePage());
+            ////_crudManager.
+
+
+
         }
     }
 }

@@ -32,24 +32,23 @@
                Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" Grid.RowSpan="2" HorizontalContentAlignment="Center"
                VerticalContentAlignment="Center" Background="Black" Foreground="WhiteSmoke"/>
 
-
         <!--ListBox Daily Gym Plan-->
         <Label Content="Daily Gym Plan Selection" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,133,5" Grid.Row="2" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3"/>
-        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="ListBoxDailyGymPlan" Background="WhiteSmoke" FontSize="8"  Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="2">
-        </ListBox>
+        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible"  x:Name="ListBoxDailyGymPlan" Background="WhiteSmoke" FontSize="13"  Grid.Row="3" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="0,0,75,0"/>
+        <!--SelectionChanged="ListBoxItem_SelectionChanged"--><!--/>-->
+
 
         <!--ListBox Weekly Gym Plan-->
         <Label Content="Weekly Gym Plan" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,0,5" Grid.Row="2" Grid.Column="3" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="262"/>
-        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="ListBoxWeeklyGymPlan" Background="WhiteSmoke" FontSize="20" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="2" SelectionChanged="ListBoxWeeklyGymPlan_SelectionChanged">
+        <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="ListBoxWeeklyGymPlan" FontWeight ="Bold" Background="WhiteSmoke" FontSize="13" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="40,0,93,0" SelectionChanged="ListBoxWeeklyGymPlan_SelectionChanged">
         </ListBox>
-
-
 
         <!--Button Delete Exercise-->
         <Button x:Name="ButtonDeleteExercise" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold"  FontSize="18" Content="Delete Exercise"
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonDeleteExercise_Click"/>
 
         <!--Button Add Exercise -->
+        
         <Button x:Name="ButtonAddExercise" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="18" Content="Add Exercise"
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonAddExercise_Click"/>
 
@@ -63,31 +62,13 @@
         <!--Button Clear Entry-->
         <Button x:Name="ButtonClear" Grid.Row="8" Grid.Column="5" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Clear "
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonClear_Click"/>
-        <Grid Grid.ColumnSpan="2" Grid.Column="2" Margin="86,24,47,24" Grid.RowSpan="2" Grid.Row="3">
-            <Path Name="starPath" Fill="White" StrokeThickness="1" Stroke="White" 
-          Data="M 127,37 L 104,105 L 34,105 L 91,150 L 69,218 L 127,176 L 187,218 L 164,150 L 223,105 L 151,105 L 127,37">
-            </Path>
-        </Grid>
 
-        <Image Width="300">
-            <Image.Source>
-                <BitmapImage DecodePixelWidth="200"  UriSource="Flower.jpg" />
-            </Image.Source>
-        </Image>
-        
-        
         <!--Button Update Exercise-->
         <Button x:Name="ButtonUpdateExercise" Grid.Row="8" Grid.Column="3" Grid.ColumnSpan="1" Background="Black" Foreground="White" FontWeight="Bold" FontSize="16" Content="Update Exercise"
                VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="ButtonUpdateExercise_Click"/>
-        <Label x:Name="LabelUserName" Content="Label" Grid.Column="5" HorizontalAlignment="Left" Margin="8,12,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="34" Width="119" Foreground="White">
-            <Label.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.199"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Label.RenderTransform>
+        <Label x:Name="LabelUserName" Content="Label" Grid.Column="5" HorizontalAlignment="Left" Margin="8,12,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="34" Width="119" Foreground="White" FontSize="15" FontFamily="calibiri" FontWeight="Bold">
+
         </Label>
+        <Frame x:Name="FrameMain" NavigationUIVisibility="Hidden"></Frame>
     </Grid>
 </Window>

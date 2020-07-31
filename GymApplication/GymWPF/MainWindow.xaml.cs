@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GymController;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +21,7 @@ namespace GymWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        private CRUDManager _crudManager = new CRUDManager();
         public MainWindow()
         {
             InitializeComponent();
@@ -39,5 +41,10 @@ namespace GymWPF
             //log_in loginWindow = new log_in();
             //loginWindow.ShowDialog();
         }
+
+       //public void CreateTraining(int userId, string training, string difficulity, string plan)
+       // {
+       //     _crudManager.CreateTraining(userId, training, plan, difficulity);
+       // }
     }
 }

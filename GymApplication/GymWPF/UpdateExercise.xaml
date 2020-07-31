@@ -7,13 +7,30 @@
         mc:Ignorable="d"
         Title="AddExercise" Height="450" Width="450">
     <Grid >
-        <TextBox x:Name="TrainingBox" HorizontalAlignment="Left" Margin="10,63,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Type of Training" Margin="10,32,334,376"/>
-        <Label Content="Daily Routine:" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="RoutineBox" HorizontalAlignment="Left" Margin="10,112,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="415" Height="54"/>
-        <Button Content="Save" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top" Height="33" Width="127" Click="ButtonSave_Click"/>
-        <Label Content="Difficuty" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="DifficultyBox" HorizontalAlignment="Left" Margin="10,222,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Suzanne\github\Gym-Application\GymApplication\GymWPF\Images\gym.jpg"/>
+        </Grid.Background>
+        <Label Content="Type of Training:" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" FontWeight ="Bold" FontSize="17" Foreground="White" FontFamily="Calibri"/>
+        <Label Content="Daily Routine:" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" FontWeight = "Bold" FontSize="17" Foreground="White" FontFamily="Calibri"/>
+        <Label Content="Difficuty" HorizontalAlignment="Left" Margin="292,35,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="36" Width="86" FontSize="17" Foreground="White" FontFamily="Calibri"/>
+
+        <TextBox x:Name="RoutineBox" HorizontalAlignment="Left" Margin="10,139,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="414" Height="33"/>
+        <TextBox x:Name="TrainingBox" HorizontalAlignment="Left" Margin="10,70,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" Height="18"/>
+        <TextBox x:Name="DifficultyBox" HorizontalAlignment="Left" Margin="292,71,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+
+
+        <Button Content="Save" HorizontalAlignment="Left" Margin="10,259,0,0" VerticalAlignment="Top" Height="33" Width="127" Click="ButtonSave_Click"/>
+        <MediaElement HorizontalAlignment="Left" Height="100" Margin="93,282,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+            <MediaElement.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="16.596"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-14.902"/>
+                </TransformGroup>
+            </MediaElement.RenderTransform>
+        </MediaElement>
 
     </Grid>
 </Window>
