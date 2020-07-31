@@ -39,16 +39,15 @@ After my inital sprint review with Astha, we have established certain aspects th
 - Commit more to Github.
 
 ## Sprint 2 Retrospective
-- After my first sprint, I thought I had a clearer idea of what to do as I broke down my user stories into more specific stories. However, I need to make sure to focus my user stories for a MVP instead of bonus functionality for my application. 
+
+- Upon reviewing my second sprint I have realised I must time-box more, as focusing on non-essential aspects of the application is taking up too much time and I must focus on developing an MVP due to the short time-span of the project.
 
 ### What went well
 - Completed a WPF log-in page with a clear and illustrated layout 
 - Completed encryption functionality for the user's password when they log-in
 - Halfway through designing the main home-page for the application.
 
-## Sprint 2 Retrospective
 
-- Upon reviewing my second sprint I have realised I must time-box more, as focusing on non-essential aspects of the application is taking up too much time and I must focus on developing an MVP due to the short time-span of the project.
 
 
 
