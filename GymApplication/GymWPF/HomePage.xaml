@@ -39,7 +39,7 @@
 
 
         <!--ListBox Weekly Gym Plan-->
-        <Label Content="Weekly Gym Plan" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,0,5" Grid.Row="2" Grid.Column="3" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="262"/>
+        <Label Content="Achievements" FontFamily="Calibri" FontWeight="Bold" Margin="5,5,0,5" Grid.Row="2" Grid.Column="3" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Grid.ColumnSpan="3" HorizontalAlignment="Left" Width="262"/>
         <ListBox ItemsSource="{Binding}" ScrollViewer.VerticalScrollBarVisibility="Visible" x:Name="ListBoxWeeklyGymPlan" FontWeight ="Bold" Background="WhiteSmoke" FontSize="13" Grid.Row="3" Grid.Column="3" Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="40,0,93,0" SelectionChanged="ListBoxWeeklyGymPlan_SelectionChanged">
         </ListBox>
 

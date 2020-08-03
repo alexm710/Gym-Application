@@ -26,6 +26,8 @@ namespace GymWPF
             InitializeComponent();
         }
 
+
+
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
             string difficulty = DifficultyBox.Text;

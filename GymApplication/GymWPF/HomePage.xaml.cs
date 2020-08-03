@@ -38,36 +38,44 @@ namespace GymWPF
             PopulateExercises();
 
             int count = ListBoxDailyGymPlan.Items.Count;
-            if (count >= 1)
-            {
-                ListBoxItem itm = new ListBoxItem();
-                itm.Content = "Good start!";
-                ListBoxWeeklyGymPlan.Items.Add(itm);
-            }
-            if (count >= 2)
-            {
-                ListBoxItem itm = new ListBoxItem();
-                itm.Content = "Keep going!";
-                ListBoxWeeklyGymPlan.Items.Add(itm);
-            }
-            if (count >= 3)
-            {
-                ListBoxItem itm = new ListBoxItem();
-                itm.Content = "You're nearly there!";
-                ListBoxWeeklyGymPlan.Items.Add(itm);
-            }
-            if (count >= 4)
-            {
-                ListBoxItem itm = new ListBoxItem();
-                itm.Content = "Congratulations on completing your weekly target!";
-                ListBoxWeeklyGymPlan.Items.Add(itm);
-            }
-            if (count >= 5)
+
+            if (count == 5)
             {
                 ListBoxItem itm = new ListBoxItem();
                 itm.Content = "Now you're just showing off.";
                 ListBoxWeeklyGymPlan.Items.Add(itm);
             }
+
+            if (count == 4)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "Congratulations on completing your weekly target!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+
+            if (count == 3)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "You're nearly there!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+
+            if (count == 2)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "Keep going!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+
+
+            if (count == 1)
+            {
+                ListBoxItem itm = new ListBoxItem();
+                itm.Content = "Good start!";
+                ListBoxWeeklyGymPlan.Items.Add(itm);
+            }
+
+
         }
 
         private void PopulateName()
@@ -93,7 +101,7 @@ namespace GymWPF
 
         private void ButtonClear_Click(object sender, RoutedEventArgs e)
         {
-            string userInput = txtBoxName.Text;
+            ListBoxWeeklyGymPlan.Items.Clear();
 
         }
 

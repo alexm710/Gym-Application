@@ -21,7 +21,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="GymModel.CurrentUser">
-    <Position X="11.25" Y="0.5" Width="2.5" />
+    <Position X="10" Y="1.25" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAACAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>CurrrentUser.cs</FileName>
