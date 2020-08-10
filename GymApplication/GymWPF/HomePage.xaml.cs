@@ -23,7 +23,6 @@ namespace GymWPF
         private CRUDManager _trainingProgram = new CRUDManager();
         public HomePage()
         {
-            //LabelUserName.PopulateName();
             InitializeComponent();
             PopulateExercises();
             PopulateName();
