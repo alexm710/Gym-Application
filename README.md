@@ -88,3 +88,5 @@ This small sprint wasn't essential to include, however, documenting the whole pr
 - Unfortunately I got food poisoning the day of the presentation. Therefore I was not able to have a sprnt review with Astha or prepare as much as I would have desired for the demonstration. However, I was able to complete a PowerPoint presentation and demonstration preparation in a short space of time.
 
 Even after un-forseen circumstances of feeling very sickly, the presentation managed to be a success. After reviewing the project as a whole, I have gained a wealth of knowledge, especially on time-boxing important deliverables first before bonus functionality, and creating clear user stories in order to have a clear understanding of how to achieve the project goals. I will use the knowledge ascertained in this project for future experiences and projects.
+
+https://github.com/alexm710/Gym-Application/projects/2
