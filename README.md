@@ -89,4 +89,5 @@ This small sprint wasn't essential to include, however, documenting the whole pr
 
 Even after un-forseen circumstances of feeling very sickly, the presentation managed to be a success. After reviewing the project as a whole, I have gained a wealth of knowledge, especially on time-boxing important deliverables first before bonus functionality, and creating clear user stories in order to have a clear understanding of how to achieve the project goals. I will use the knowledge ascertained in this project for future experiences and projects.
 
+Please find the project KANBAN board below in order to find my user stories and project goals.
 https://github.com/alexm710/Gym-Application/projects/2
