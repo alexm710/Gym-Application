@@ -48,6 +48,43 @@ After my inital sprint review with Astha, we have established certain aspects th
 - Halfway through designing the main home-page for the application.
 
 
+## Sprint 3 Overview
 
+### What went well
+- Completed functionality and WPF design for a user to register an account.
+- Majority of the main home-page design has been completed. 
+- 3/4 CRUD operations working.
 
+### Sprint Review 
+Following the completion of my third sprint review, certain aspects were discussed with Astha which will be addressed below.
+- I have decided to postpone the completion of decrypting a users password in order to speed up the process of developing an MVP, which me and Astha both believed was the correct decision. Therefore, the decryption user story has been added to a 'wish list' column in my project board, due too the fact completing the decryption will be bonus functionality
+- Astha and I were happy with the quick progress that has been made this sprint, however we agreed for the next sprint, the remaining CRUD operation needed to be completed as soon as possible in order to have an MVP ready.
 
+## Sprint 3 Retrospective
+- Upon reflecting on the third sprint review, I believe I am on the right track after focusing on completing tasks with the highest priority instead. However, it is imperative I work efficently tomorrow in order to complete my project in such a short sprint.
+
+## Sprint 4 Overview 
+
+### What went well
+- A mininum viable product has been achieved. All CRUD operations have been successfully implemented into the view (WPF).
+- WPF front-end design has been polished with extra images and styling has been added in order to have an enticing front which would look inviting and appealing to users.
+- Two more windows created in my WPF which a user can add or update exercises to their tailored weekly fitness/gym routine.
+- Extra achievments partially added when a user completes a certain amount of fitnesss.
+
+## Sprint 4 Retrospective
+After completing the final sprint review, the project as a whole was reviewd with Astha which will be addressed below.
+- Astha and I were happy with the work completed within this sprint. An MVP has been delivered and now I can focus on extra functionality.
+- Preparation discussed about how to demonstrate the project in tomorrow's presentation.
+
+## Sprint 5 Sprint Overview
+
+### What went well
+- Finished final touches on completing the achievments a user can recieve when completing exercises within a week.
+- Completed presentation for the demonstration.
+
+## Sprint 5 Retrospective
+This small sprint wasn't essential to include, however, documenting the whole process of completing the project seemed fitting.
+
+- Unfortunately I got food poisoning the day of the presentation. Therefore I was not able to have a sprnt review with Astha or prepare as much as I would have desired for the demonstration. However, I was able to complete a PowerPoint presentation and demonstration preparation in a short space of time.
+
+Even after un-forseen circumstances of feeling very sickly, the presentation managed to be a success. After reviewing the project as a whole, I have gained a wealth of knowledge, especially on time-boxing important deliverables first before bonus functionality, and creating clear user stories in order to have a clear understanding of how to achieve the project goals. I will use the knowledge ascertained in this project for future experiences and projects.
