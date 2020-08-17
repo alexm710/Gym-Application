@@ -41,10 +41,5 @@ namespace GymWPF
             //log_in loginWindow = new log_in();
             //loginWindow.ShowDialog();
         }
-
-       //public void CreateTraining(int userId, string training, string difficulity, string plan)
-       // {
-       //     _crudManager.CreateTraining(userId, training, plan, difficulity);
-       // }
     }
 }

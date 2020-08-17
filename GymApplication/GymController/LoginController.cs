@@ -14,6 +14,8 @@ namespace GymController
     {
         public User SelectedUser { get; set; }
 
+
+        // Encryption key commented out until bonus functionality for the project has been completed.
         //public string Decrypt(string cipherText)
         //{
         //    string EncryptionKey = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -42,7 +44,6 @@ namespace GymController
         {
             using var db = new GymContext();
             {
-                //var login = db.Users.Where(u => u.UserName == username).Select(p => p.Password).FirstOrDefault();
                 User selectedUser = db.Users.Where(u => u.UserName == username).FirstOrDefault();
                 var details =
                     (from user in db.Users

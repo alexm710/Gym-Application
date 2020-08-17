@@ -17,6 +17,9 @@ namespace GymController
             db.Add(new User { FirstName = firstName, LastName = lastName, UserName = username, Email = email, Password = password });
             db.SaveChanges();
         }
+    }
+}
+        // Encryption key commented out until bonus functionality for the project has been completed.
         //public string Encrypt(string encryptString)
         //{
         //    string EncryptionKey = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -64,5 +67,3 @@ namespace GymController
         //        }
         //    }
         //return cipherText;
-        }
-    }

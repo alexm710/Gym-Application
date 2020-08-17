@@ -33,13 +33,7 @@ namespace GymWPF
             string routine = RoutineBox.Text;
             _crudManager.CreateTraining(CurrentUser.Id, training, routine, difficulty);
             MessageBox.Show("Your exercise has been added succesfully.");
-            //PopulateExercises();
             this.Close();
-            //FrameMain.Navigate(new HomePage());
-            ////_crudManager.
-
-
-
         }
     }
 }

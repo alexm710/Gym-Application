@@ -104,20 +104,8 @@ namespace GymWPF
                 TrainingProgram trainingProgram = ListBoxDailyGymPlan.SelectedItem as TrainingProgram;
                 _updateExercise.ShowDialog();
                 PopulateUpdateExercise();
-                //_trainingProgram.Update(trainingProgram.TrainingId, trainingProgram.TrainingType, trainingProgram.Difficulty, trainingProgram.DailyPlan);
-
-
             }
         }
-        //public void ListBoxItem_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        //{
-        //    if (ListBoxDailyGymPlan.SelectedItem != null)
-        //    {
-        //        _trainingProgram.SetSelectedItem(ListBoxDailyGymPlan.SelectedItem);
-        //        PopulateUpdateExercise();
-        //    }
-        //}
-
 
         private void PopulateUpdateExercise()
         {
