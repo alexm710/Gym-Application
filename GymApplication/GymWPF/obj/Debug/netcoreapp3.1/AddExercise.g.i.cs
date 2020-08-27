@@ -85,7 +85,7 @@ namespace GymWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GymWPF;V1.0.0.0;component/addexercise.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GymWPF;component/addexercise.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddExercise.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
