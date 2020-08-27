@@ -1,8 +1,8 @@
 # Gym Application
-![Image screenshot](.GymApplication/Screenshots/FirstPage.PNG)
-![Image screenshot](.GymApplication/Screenshots/Register.PNG)
-![Image screenshot](.GymApplication/Screenshots/MainPage.PNG)
-![Image screenshot](.GymApplication/Screenshots/addexercise.PNG)
+![Image screenshot](.Screenshots/FirstPage.PNG)
+![Image screenshot](.Screenshots/Register.PNG)
+![Image screenshot](.Screenshots/MainPage.PNG)
+![Image screenshot](.Screenshots/addexercise.PNG)
 
 
 ## Project Overview 
