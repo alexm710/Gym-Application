@@ -1,5 +1,5 @@
 # Gym Application
-![Image screenshot](./Screenshots/FirstPage.PNG)
+![Image screenshot](.GymApplication/Screenshots/FirstPage.PNG)
 
 ## Project Overview 
 This application will develop a weekly gym plan and fitness routine for a user depending on certain factors. For example their weight, height, ability and fitness level will affect how difficult the training program is. Furthermore, if a user completes multiple weeks in succession, the training will incrementally get more difficult.
